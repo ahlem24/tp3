@@ -1,0 +1,6 @@
+<div class="container">
+<h1>List des personnes</h1>
+
+<app-personne *ngFor="let p of personnes"
+[nomPersonne]="p.nom" [agePersonne]="p.age" [isEtudiant]="p.etudiant" ></app-personne>
+</div>

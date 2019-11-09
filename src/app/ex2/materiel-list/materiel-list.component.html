@@ -1,0 +1,4 @@
+<h1>Liste du matériel</h1>
+<ng-container *ngFor="let m of materiels">
+<app-materiel  [nom]="m.nom" [ref]="m.reference" [prix]="m.prix" [repare]="m.repare" ></app-materiel>
+</ng-container>

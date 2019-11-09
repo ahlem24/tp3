@@ -1,0 +1,10 @@
+<ul class="list-group ">
+    <li  [ngClass]="{'list-group-item': true,
+    'list-group-item-success':repare=='endommagé'}">{{nom}} <br>
+ 
+ Réference:{{ref}} 
+ <input type="text" value="{{prix}}">
+etat: {{repare}}
+  <button *ngIf="repare=='endommagé'"  class=" btn btn-success " (click)="onChange()">Réparer</button> </li>
+
+</ul>

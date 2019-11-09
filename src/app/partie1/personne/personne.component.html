@@ -1,0 +1,11 @@
+<ul class=' list-group'>
+    <li [ngClass]="{'list-group-item': true,
+    'list-group-item-primary':isEtudiant}"> 
+        <h4>{{nomPersonne}}</h4>
+       <p>{{agePersonne}}
+           <input type="checkbox" name="etu" disabled [checked]="isEtudiant"> Etudiant
+           <button (click)="onChanger()" class="btn btn-primary">Changer</button>
+       </p>
+       
+    </li>
+</ul>
